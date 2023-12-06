@@ -1,0 +1,23 @@
+name: Test Backend
+run-name: Testing Backend
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - dev
+
+  jobs:
+    build-backend:
+      runs-on: ubuntu-latest
+      defaults:
+        run:
+          working-directory: ./backend
+
+      steps:
+        - name: Checkout master
+          uses: actions/checkout@main
+
+        - name: Say Hi!
+          run: echo "Hello!"
+  
