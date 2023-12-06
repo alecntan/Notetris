@@ -13,7 +13,7 @@ jobs:
     environment: staging
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: backend
 
     steps:
       - name: Checkout master
