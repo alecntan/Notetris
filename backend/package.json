@@ -1,12 +1,12 @@
 {
-  "name": "app",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "Backend for Notetris App",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alec Tan",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
