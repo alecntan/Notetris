@@ -1,0 +1,21 @@
+name : Test Frontend
+run-name: Testing Frontend
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - dev
+
+  jobs:
+    build-frontend:
+      defaults:
+        run:
+          working-directory: ./frontend
+
+      steps:
+        - name: Checkout master
+          uses: actions/checkout@main
+
+        - name: Say Hello!
+          run: echo "Hello!"
