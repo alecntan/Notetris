@@ -7,15 +7,15 @@ on:
       - main
       - dev
 
-  jobs:
-    build-frontend:
-      defaults:
-        run:
-          working-directory: ./frontend
+jobs:
+  build-frontend:
+    defaults:
+      run:
+        working-directory: ./frontend
 
-      steps:
-        - name: Checkout master
-          uses: actions/checkout@main
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@main
 
-        - name: Say Hello!
-          run: echo "Hello!"
+      - name: Say Hello!
+        run: echo "Hello!"

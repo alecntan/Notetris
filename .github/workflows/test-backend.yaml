@@ -7,17 +7,17 @@ on:
       - main
       - dev
 
-  jobs:
-    build-backend:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: ./backend
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
 
-      steps:
-        - name: Checkout master
-          uses: actions/checkout@main
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@main
 
-        - name: Say Hi!
-          run: echo "Hello!"
-  
+      - name: Say Hi!
+        run: echo "Hello!"
+
