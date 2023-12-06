@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: backend
 
     steps:
       - name: Checkout master
         uses: actions/checkout@main
 
-      - name: Say Hi!
-        run: echo "Hello!"
+      - name: Install  dependencies
+        run: npm install
 
