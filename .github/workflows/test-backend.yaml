@@ -18,6 +18,12 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@main
 
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+
       - name: Install  dependencies
-        run: npm install
+        run: bun install
+
+      - name: Run Tests
+        run: bun test
 
